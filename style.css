@@ -1,0 +1,303 @@
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: #8B0000; /* vermelho escuro */
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Layout do menu com flexbox */
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo dos links */
+.menu li a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+/* Efeito ao passar o mouse */
+.menu li a:hover {
+  background-color: #B22222; /* vermelho um pouco mais claro */
+  color: #FFD700; /* dourado claro */
+}
+
+/* Marca d'água (exemplo de logo ou imagem) */
+.marcadagua {
+  width: 50%;  /* Largura da imagem */
+  height: 70%;  /* Altura da imagem */
+  opacity: 1.2;
+}
+
+/* Estilos do header */
+header {
+  border: 1px solid black;
+  height: 400px;  /* Altura do header */
+  background: black;
+  font-size: 25px;  /* Tamanho da fonte */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;  /* Centraliza o texto */
+  color: #a0a0a0;
+}
+
+main h1 {
+  color: rgb(189, 180, 180);
+  font-family: 'Oswald';
+  font-size: 40px;
+  display: flex;               /* Adiciona o flexbox */
+  justify-content: center;     /* Centraliza horizontalmente */
+  align-items: center;         /* Centraliza verticalmente */
+  margin: 0;                   /* Remover margens extras */
+  padding-top: 50px;           /* Ajuste de espaço superior */
+}
+
+main {
+  border: 1px solid black;
+  background-color: black;  /* Cor de fundo */
+  min-height: 800px;  /* Garante uma altura mínima */
+}
+
+@media (max-width: 768px) {
+  .pacotes {
+    margin: 0 auto;  /* Garante que o título fique centralizado */
+    text-align: center;  /* Centraliza o texto */
+  }
+}
+
+/* Container que organiza os pacotes */
+.container-pacotes {
+  display: flex;
+  justify-content: center;
+  gap: 10%;  /* Espaçamento entre os cards */
+  flex-wrap: wrap;
+  margin-top: 10%;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilo de cada card */
+.card {
+  background-color: rgb(29, 28, 28);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;  /* Largura fixa */
+  box-shadow: 0 4px 10px rgba(182, 173, 173, 0.5);  /* Sombras */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Título dentro do card */
+.card h2 {
+  color: white;
+}
+
+/* Lista de itens no card */
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilo dos itens dentro do card */
+.card ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+/* Marcador de lista */
+.card ul li::before {
+  content: "✔️";  /* Ícone de marcação */
+  margin-right: 8px;
+  color: gold;  /* Cor dourada */
+  flex-shrink: 0;
+}
+
+/* Botão dentro do card */
+.button {
+  border: none;
+  padding: 10px;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 250px; /* limite máximo pra ficar igual */
+  border-radius: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #2a2a2a, #3e3e3e, #5a5a5a);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  transition: background 0.3s ease, color 0.3s ease;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+/* Hover idêntico para todos os botões */
+.button:hover {
+  background: linear-gradient(135deg, #8B0000, #B22222);
+  color: #FFD700;
+  box-shadow: 0 6px 12px rgba(139, 0, 0, 0.8);
+}
+
+/* Container de serviços */
+.container-serviços {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;  /* Permite que os itens se ajustem em telas menores */
+  background-color: black;
+  padding: 20px;
+  gap: 20px;  /* Espaço entre os cards */
+}
+
+/* Título dos serviços automotivos */
+.serviços-automotivos {
+  color: yellow;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 130%;
+}
+
+/* Card de serviço automotivo */
+.serv-auto {
+  width: 22%;
+  background-color: rgba(56, 48, 48, 0.205);
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+}
+
+/* Imagem dentro do serviço */
+.serv-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;  /* Preenche a área sem distorcer a imagem */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Rodapé */
+footer {
+  background-color: #000; /* fundo preto */
+  color: #ccc; /* texto cinza claro */
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+}
+
+footer .destaque {
+  color: #00ffcc; /* destaque no e-mail */
+  font-weight: bold;
+}
+
+footer .social-links {
+  margin-bottom: 10px;
+}
+
+footer .social-links a {
+  color: #ccc;
+  margin: 0 10px;
+  font-size: 1.8rem;
+  transition: color 0.3s;
+}
+
+footer .social-links a.instagram:hover {
+  color: #E1306C; /* rosa do Instagram */
+}
+
+footer .social-links a.whatsapp:hover {
+  color: #25D366; /* verde do WhatsApp */
+}
+
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 768px) {
+  /* Ajuste dos links no nav para telas menores */
+  nav a:link {
+    float: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  /* Ajuste na imagem da marca d'água */
+  .marcadagua {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Centraliza os títulos */
+  .pacotes, .serviços-automotivos {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  /* Container de pacotes e serviços fica em coluna em telas pequenas */
+  .container-pacotes, .container-serviços {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  /* Ajuste nos cards para ocupar 90% da largura em telas pequenas */
+  .card, .serv-auto {
+    width: 90% !important;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+/* Botão Voltar ao Topo */
+#topBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-size: 18px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+#topBtn:hover {
+  background-color: #444;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
