@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BeloCar - Estética Automotiva</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navegação -->
+  <nav>
+    <div class="logo">BeloCar</div>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <ul class="menu" id="menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#contato">Fale Conosco</a></li>
+      <li><a href="https://veltacar.com.br/sistema/cliente/cadastro?cpfcnpj=60383052000116">Cadastre-se</a></li>
+      <li><a href="https://veltacar.com.br/sistema/cliente/login">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header id="home">
+    <img src="img/logo-principal.jpeg" alt="Logo BeloCar" class="marcadagua">
+    <h5>"Precisão em cada detalhe. Proteção em cada curva. Excelência em cada reflexo"</h5>
+  </header>
+
+  <!-- Pacotes -->
+  <main>
+    <h1>Nossos Pacotes</h1>
+    <div class="container-pacotes-wrapper">
+      <button class="prev" id="prevBtn">&#10094;</button>
+      <div class="container-pacotes" id="carousel">
+        <div class="card">
+          <h2>Pacote Ouro</h2>
+          <ul>
+            <li>Lavagem completa</li>
+            <li>Polimento da lataria</li>
+            <li>Limpeza interna detalhada</li>
+          </ul>
+          <button class="button">Agendar</button>
+        </div>
+        <div class="card">
+          <h2>Pacote Prata</h2>
+          <ul>
+            <li>Lavagem simples</li>
+            <li>Secagem completa</li>
+            <li>Limpeza interna rápida</li>
+          </ul>
+          <button class="button">Agendar</button>
+        </div>
+        <div class="card">
+          <h2>Pacote Bronze</h2>
+          <ul>
+            <li>Lavagem completa + cera</li>
+            <li>Polimento avançado</li>
+            <li>Higienização interna profunda</li>
+          </ul>
+          <button class="button">Agendar</button>
+        </div>
+      </div>
+      <button class="next" id="nextBtn">&#10095;</button>
+    </div>
+  </main>
+
+  <!-- Serviços -->
+  <div class="container-serviços" id="servicos">
+    <!-- 16 cards de serviços (mesmos do seu código original) -->
+    <div class="serv-auto">
+      <img src="img/lavagem-técnica.jpeg" alt="Lavagem Técnica" class="serv-img">
+      <h2>Lavagem Técnica</h2>
+      <p>Nossa Super Cera forma uma camada protetora na lataria do veículo...</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+    
+    <div class="serv-auto">
+      <img src="img/enceramento-wax.jpeg" alt="Enceramento Wax" class="serv-img">
+      <h2>Enceramento Wax</h2>
+      <p>Nossa Super Cera cria uma película de proteção sobre a lataria...</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+    <div class="serv-auto">
+      <img src="img/revitalização-plasticos.jpg" alt="Revitalização de plásticos" class="serv-img">
+      <h2>Revitalização de Plásticos</h2>
+      <p>A revitalização de plásticos traz vida e um visual mais atraente...</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+    <div class="serv-auto">
+      <img src="img/polimento-pintura.jpg" alt="Polimento de Pintura" class="serv-img">
+      <h2>Polimento de Pintura</h2>
+      <p>Carros com pinturas manchadas merecem o polimento de pintura...</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+    <div class="serv-auto">
+      <img src="img/hidratação-couro.jpg" alt="Hidratação de Couro" class="serv-img">
+      <h2>Hidratação de Couro</h2>
+      <p>O processo de limpeza e hidratação de couro mantém o equilíbrio do PH...</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+    <div class="serv-auto">
+      <img src="img/hipermeabilização-tecido.jpg" alt="Impermeabilização dos Tecidos" class="serv-img">
+      <h2>Impermeabilização dos Tecidos</h2>
+      <p>A impermeabilização protege o tecido, traz maior durabilidade...</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+    <div class="serv-auto">
+      <img src="img/oxi-sanitização.jpg" alt="Oxi-sanitização" class="serv-img">
+      <h2>Oxi-sanitização</h2>
+      <p>Elimina totalmente odores desagradáveis como cigarro, vômito, etc.</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+    <div class="serv-auto">
+      <img src="img/higienização-portamalas.jpg" alt="Higienização do Porta Malas" class="serv-img">
+      <h2>Higienização do Porta Malas</h2>
+      <p>Evite que suas malas se sujem ou que o porta-malas dê mau cheiro...</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+    <div class="serv-auto">
+      <img src="img/espelhamento-de-pintura.jpg" alt="Espelhamento de Pintura" class="serv-img">
+      <h2>Espelhamento de Pintura</h2>
+      <p>Revitalização que traz vida às peças expostas ao sol e à chuva...</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+    <div class="serv-auto">
+      <img src="img/cristalização-pintura.jpg" alt="Cristalização de Pintura" class="serv-img">
+      <h2>Cristalização de Pintura</h2>
+      <p>Criamos uma película de proteção contra raios solares e sujeiras...</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+    <div class="serv-auto">
+      <img src="img/vitrificação-pintura.jpg" alt="Vitrificação de Pintura" class="serv-img">
+      <h2>Vitrificação de Pintura</h2>
+      <p>Protege contra o desgaste da pintura pelo tempo e pequenos acidentes.</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+    <div class="serv-auto">
+      <img src="img/vitrificacao-vidros.jpg" alt="Vitrificação de Vidros" class="serv-img">
+      <h2>Vitrificação de Vidros</h2>
+      <p>Remove arranhões e opacidade, aumentando a capacidade de iluminação.</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+    <div class="serv-auto">
+      <img src="img/remoção-acida.jpg" alt="Remoção de Chuva Ácida" class="serv-img">
+      <h2>Remoção de Chuva Ácida</h2>
+      <p>Remove manchas causadas por contaminação atmosférica.</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+    <div class="serv-auto">
+      <img src="img/limpeza-tecnica-motor.jpg" alt="Limpeza Técnica de Motor" class="serv-img">
+      <h2>Limpeza Técnica de Motor</h2>
+      <p>Feita com produtos biodegradáveis e sem uso de água.</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+    <div class="serv-auto">
+      <img src="img/polimento-farois.jpg" alt="Polimento de Faróis" class="serv-img">
+      <h2>Polimento de Faróis</h2>
+      <p>Remove riscos e opacidade dos faróis, melhorando a iluminação.</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+    <div class="serv-auto">
+      <img src="img/decontaminação-pintura.jpg" alt="Descontaminação de Pintura" class="serv-img">
+      <h2>Descontaminação de Pintura</h2>
+      <p>Remove contaminantes que deixam a pintura áspera como lixa.</p>
+      <button class="button">Agendar Serviços</button>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer id="contato">
+    <div class="social-links">
+      <a href="https://www.instagram.com/belocargarage?igsh=MmlhNzRpYjVldm9m&utm_source=qr" target="_blank" class="instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    <p>
+      Endereço: Estrada Kizaemon Takeuti, 71 – Jd Clementino, Taboão da Serra – SP<br>
+      CEP: 06810-000<br>
+      E-mail: <span class="destaque">belocar.garage@gmail.com</span>
+    </p>
+  </footer>
+
+  <!-- Botão "Voltar ao topo" -->
+  <button id="topBtn" title="Voltar ao topo">⬆️</button>
+
+  <!-- Scripts -->
+  <script>
+    // Menu hambúrguer
+    const hamburger = document.getElementById("hamburger");
+    const menu = document.getElementById("menu");
+    hamburger.addEventListener("click", () => { menu.classList.toggle("active"); });
+
+    // Scroll suave
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if(target) target.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+
+    // Voltar ao topo
+    const topBtn = document.getElementById("topBtn");
+    window.onscroll = function() { topBtn.style.display = window.scrollY > 200 ? "block" : "none"; };
+    topBtn.addEventListener("click", () => { window.scrollTo({ top: 0, behavior: "smooth" }); });
+
+    // Animação das imagens de serviços
+    const images = document.querySelectorAll(".serv-img");
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    images.forEach(img => { img.classList.add("fade-in"); observer.observe(img); });
+
+    // ===== CARROSSEL =====
+    const carousel = document.getElementById("carousel");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    prevBtn.addEventListener("click", () => {
+      carousel.scrollBy({ left: -carousel.offsetWidth, behavior: "smooth" }); // Botão anterior
+    });
+
+    nextBtn.addEventListener("click", () => {
+      carousel.scrollBy({ left: carousel.offsetWidth, behavior: "smooth" }); // Botão próximo
+    });
+
+    // Mostrar/ocultar setas dependendo da tela
+    function toggleArrows() {
+      if (window.innerWidth <= 1024) {
+        prevBtn.style.display = "block";
+        nextBtn.style.display = "block";
+      } else {
+        prevBtn.style.display = "none";
+        nextBtn.style.display = "none";
+      }
+    }
+    window.addEventListener("resize", toggleArrows);
+    toggleArrows();
+
+    // Arrastar carrossel (touch devices)
+    let isDragging = false, startX, scrollLeft;
+    carousel.addEventListener('mousedown', (e) => { isDragging = true; startX = e.pageX - carousel.offsetLeft; scrollLeft = carousel.scrollLeft; });
+    carousel.addEventListener('mouseleave', () => isDragging = false);
+    carousel.addEventListener('mouseup', () => isDragging = false);
+    carousel.addEventListener('mousemove', (e) => {
+      if(!isDragging) return;
+      e.preventDefault();
+      const x = e.pageX - carousel.offsetLeft;
+      const walk = (x - startX) * 2;
+      carousel.scrollLeft = scrollLeft - walk;
+    });
+
+    // Para toque em mobile
+    carousel.addEventListener('touchstart', (e) => { startX = e.touches[0].pageX - carousel.offsetLeft; scrollLeft = carousel.scrollLeft; });
+    carousel.addEventListener('touchmove', (e) => {
+      const x = e.touches[0].pageX - carousel.offsetLeft;
+      const walk = (x - startX) * 2;
+      carousel.scrollLeft = scrollLeft - walk;
+    });
+  </script>
+</body>
+</html>
